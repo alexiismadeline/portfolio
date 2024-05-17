@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> [other] </title>
+    <link rel="stylesheet" href="styles/universal.css">
+</head>
+<body>
+
+    <header id ="top">
+        <h1><a href="index.html">Alexis Madeline</a></h1>
+        <h2><a href="bio.html">Contact / Bio</a></h2>
+    </header>
+
+    <main>
+        <section id="Vimeo-Video">
+            <iframe src="https://player.vimeo.com/video/925213287?h=5d2cc2047c" allowfullscreen></iframe> 
+        </section>
+
+        <nav id = "Main-Nav">
+            <h1><a href="video.html">1.Video</a></h1>
+            <h2><a href="Photo.html">2.Photo</a></h2>
+            <h3><a href="Other.html">3.Other</a></h3>
+            
+            
+        </nav>
+        
+
+        
+
+    </main>
+
+    <footer id="footer">
+        <p class="go-to-top"><a href="#top"> Go To Top</a></p>
+    </footer>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const currentPage = window.location.pathname.split("/").pop();
+			if (currentPage === "video.html") {
+				document.getElementById("video-link").classList.add("current-page");
+			}
+		});
+	</script>
+</body>
+</html>
